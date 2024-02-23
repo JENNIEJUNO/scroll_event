@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll_Event</title>
+    <script src="https://kit.fontawesome.com/afd0d34fd5.js" crossorigin="anonymous"></script>
+    <link href="scroll_site.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Cute+Font&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Cute+Font&family=Moirai+One&family=Yeon+Sung&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/afd0d34fd5.js" crossorigin="anonymous"></script>
+    <style>
+        *{margin:0px; padding:0px; box-sizing:border-box; overflow:hidden;}
+        a{text-decoration:none; color:black;}
+        ul{list-style:none;}
+    </style>
+</head>
+<body>
+    <div class="window_box">
+        <div class="scroll_icon_up"><i class="fa-solid fa-arrow-up"></i></div>
+        <div class="scroll_icon_down"><i class="fa-solid fa-arrow-down"></i></div>
+        <header>
+            <ul class="header_ul">
+                <li class="header_li">SCROLL</li>
+                <li class="header_li">section</li>
+                <li class="header_li">row</li>
+                <li class="header_li">opacity</li>
+                <li class="header_li">animation</li>
+                <li class="header_li">click</li>
+                <li class="header_li">EVENT</li>
+            </ul>
+        </header>
+        <section class="section0" name="start">
+            <div class="text_box1">
+                <div class="up_text">SCROLL</div>
+                <div class="down_text" style="z-index:2;">EVENT</div>
+            </div>
+            <div class="mouse_icon_box" style="z-index:1;"><img src="mouse_icon.png" style="width:100%; height:100%;"></div>
+        </section>
+        <section class="section1" name="section_scroll">
+            <div class="text_box2">
+                <div class="up_text">SECTION</div>
+                <div class="down_text" style="z-index:2;">SCROLL</div>
+            </div>
+        </section>
+        <section class="section2" name="row_scroll">
+            <div class="row_text_box">
+                <p>Row Scroll Section</p>
+            </div>
+        </section>
+        <section class="section3" name="opacity">
+            <p class="opacity_text">Opacity Scroll</p>
+        </section>
+        <section class="section4" name="animation">
+            <p class="section4_text_box">Scroll Lock</p>
+            <div class="ball_box">
+                <div class="ball"></div>
+            </div>
+            <ul class="graph_box">
+                <li class="graph_li">
+                    <div class="graph_text_box"></div>
+                    <div class="graph_color_box" style="height:100%; background-color:red;"></div>
+                </li>
+                <li class="graph_li">
+                    <div class="graph_text_box"></div>
+                    <div class="graph_color_box" style="height:100%; background-color:orange;"></div>
+                </li>
+                <li class="graph_li">
+                    <div class="graph_text_box"></div>
+                    <div class="graph_color_box" style="height:100%; background-color:yellow;"></div>
+                </li>
+                <li class="graph_li">
+                    <div class="graph_text_box"></div>
+                    <div class="graph_color_box" style="height:100%; background-color:green;"></div>
+                </li>
+                <li class="graph_li">
+                    <div class="graph_text_box"></div>
+                    <div class="graph_color_box" style="height:100%; background-color:blue;"></div>
+                </li>
+                <li class="graph_li">
+                    <div class="graph_text_box"></div>
+                    <div class="graph_color_box" style="height:100%; background-color:navy;"></div>
+                </li>
+                <li class="graph_li">
+                    <div class="graph_text_box"></div>
+                    <div class="graph_color_box" style="height:100%; background-color:purple;"></div>
+                </li>
+            </ul>
+        </section>
+        <section class="section5" name="click">
+            <div class="section5_sub_box"></div>
+            <ul id="menu_box">
+                <li class="menu_box_li" style="color:red;">color
+                    <ul class="menu_sub_box">
+                        <li class="menu_sub_box_li" number="0">gray</li>
+                        <li class="menu_sub_box_li" number="1">skyblue</li>
+                        <li class="menu_sub_box_li" number="2">purple</li>
+                        <li class="menu_sub_box_li" number="3">pink</li>
+                    </ul>
+                </li>
+                <li class="menu_box_li" style="color:orange;">width
+                    <ul class="menu_sub_box">
+                        <li class="menu_sub_box_li" number="4">10%</li>
+                        <li class="menu_sub_box_li" number="5">40%</li>
+                        <li class="menu_sub_box_li" number="6">70%</li>
+                        <li class="menu_sub_box_li" number="7">100%</li>
+                    </ul>
+                </li>
+                <li class="menu_box_li" style="color:yellow;">height
+                    <ul class="menu_sub_box">
+                        <li class="menu_sub_box_li" number="8">10%</li>
+                        <li class="menu_sub_box_li" number="9">40%</li>
+                        <li class="menu_sub_box_li" number="10">70%</li>
+                        <li class="menu_sub_box_li" number="11">100%</li>
+                    </ul>
+                </li>
+                <li class="menu_box_li" style="color:green;">radius
+                    <ul class="menu_sub_box">
+                        <li class="menu_sub_box_li" number="12">50%</li>
+                        <li class="menu_sub_box_li" number="13">30%</li>
+                        <li class="menu_sub_box_li" number="14">10%</li>
+                        <li class="menu_sub_box_li" number="15">0%</li>
+                    </ul>
+                </li>
+                <li class="menu_box_li" style="color:blue;">몰라몰라
+                    <ul class="menu_sub_box">
+                        <li class="menu_sub_box_li" number="16">10%</li>
+                        <li class="menu_sub_box_li" number="17">30%</li>
+                        <li class="menu_sub_box_li" number="18">50%</li>
+                        <li class="menu_sub_box_li" number="19">70%</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="section5_text_box">DROP DOWN SECTION</div>
+        </section>
+        <section class="section6" name="end">
+            <ul class="link_list">
+                    <a href="#" class="link_list_a">
+                        <li class="link_list_li" style="color:skyblue"><img src="github.png" style="width:50%;"><p>GITHUB</p></li>
+                    </a>
+                    <a href="https://www.tistory.com/member/blog" class="link_list_a">
+                        <li class="link_list_li" style="color:orange;"><img src="tistory.png" style="width:100%;">TISTORY</li>
+                    </a>
+                    <a href="https://github.com/JENNIEJUNO" class="link_list_a">
+                        <li class="link_list_li"><img src="github.png" style="width:50%;">GITHUB</li>
+                    </a>
+                    <a href="https://www.naver.com/" class="link_list_a">
+                        <li class="link_list_li" style="color:green;"><img src="naver.jpg" style="width:100%;">NAVER</li>
+                    </a>
+            </ul>
+        </section>
+    </div>
+    <script src="scroll_site.js"></script>
+</body>
+</html>

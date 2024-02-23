@@ -1,0 +1,101 @@
+html, body{height:100%;}
+.window_box{height:100vh; overflow:hidden; background-color:rgb(248, 227, 188);}
+/*right 40%을 줬더니 가운데로 갔음 왜 그런지 모름*/
+.scroll_icon_up{
+    position:fixed; left:1%; top:16%; font-size:2vw; font-weight:700; color:red; z-index:5;
+    animation-name:scroll_icon_up; animation-duration:0.8s; animation-iteration-count:infinite;
+    opacity:0;
+}
+.scroll_icon_down{
+    position:fixed; left:1%; bottom:0px; font-size:2vw; font-weight:700; color:blue; z-index:5;
+    animation-name:scroll_icon_down; animation-duration:0.8s; animation-iteration-count:infinite;
+}
+@-webkit-keyframes scroll_icon_up{0%{top:16%;}50%{top:18%;}100%{top:16%;}}
+@-webkit-keyframes scroll_icon_down{0%{bottom:0%;}50%{bottom:2%;}100%{bottom:0%;}}
+
+.mouse_icon_box{position:fixed;}
+header{position:fixed; width:100%; font-family:"Bagel Fat One", system-ui; z-index:5;}
+.header_ul{width:100%; height:10vw; display:flex; justify-content:space-between; align-items:center;
+    font-size:1.7vw;}
+.header_li{cursor:pointer;}
+.header_li:first-child{padding-left:3vw; font-size:2.4vw} .header_li:last-child{padding-right:3vw; font-size:2.4vw}
+.header_li:hover{color:white;}
+
+.section0{position:relative; display:flex; justify-content:center; width:100%;}
+.text_box1{position:absolute; display:flex; flex-direction:column; align-items:center;
+    font-family: "Yeon Sung", system-ui; font-weight:700;}
+.section1{position:relative; display:flex; justify-content:center; width:100%;}
+.text_box2{position:absolute; display:flex; flex-direction:column; align-items:center;
+    font-family: "Yeon Sung", system-ui; font-weight:700;}
+.section2{background-color:black; overflow:hidden;}
+.section2>.row_text_box{width:500%; height:100%; display:flex; justify-content:center; align-items:center;
+    color:skyblue; font-family: "Yeon Sung", system-ui; font-weight:700;}
+.section2>.row_text_box>p{z-index:2;}
+.section3{display:flex; justify-content:center; align-items:center; background-color:skyblue;}
+.section3>.opacity_text{font-family: "Yeon Sung", system-ui; font-weight:700; color:green}
+.section4{
+    position:relative;
+    width:0; height:100vh; background-color:black;
+    transition:1s;
+    overflow:hidden;
+}
+.ball_box{
+    position: relative;
+    display:flex; justify-content:center;
+    width:30vw; height:100vh;
+}
+.ball_box>.ball{
+    position:absolute; opacity:0; top:30%;
+    width:6vw; height:6vw; background-color:white; border-radius:50%;
+    font-family: "Yeon Sung", system-ui; font-weight:700;
+    font-size:10vw;
+    display:flex; justify-content:center; align-items:center;
+    transition:1s;
+    animation-duration:1s;
+    animation-timing-function:ease-in;
+    animation-direction:alternate;
+    animation-iteration-count:6;
+    animation-delay:3s;
+    color:pink;
+}
+@-webkit-keyframes ball{0%{top:30%;} 95%{width:6vw;} 100%{width:8vw; top:90%;}}
+
+.graph_box{
+    position:absolute; right:0px; bottom:0px;
+    display:flex; justify-content:space-evenly; align-items:end;
+    width:70vw;
+}
+.graph_box>.graph_li{
+    width:8%; height:0;
+    color:white;
+    transition:1s;
+}
+.graph_text_box{
+    padding-bottom:10px; font-weight:700;
+    display:flex; justify-content:center; align-items:end;
+    font-size:2vw;
+}
+.section4_text_box{position:absolute; top:20%; right:40%;
+    font-family: "Yeon Sung", system-ui; font-size:4vw; font-weight:700; color:white;}
+/* section5 */
+.section5{display:flex; justify-content:center; position:relative;}
+.section5_sub_box{position:absolute; width:100vw; height:100vh; display:inline-block; background-color:pink;}
+#menu_box{display:flex; justify-content:space-evenly; width:80vw; top:10vw; position:absolute;}
+.menu_box_li{font-family: "Yeon Sung", system-ui; font-weight:700; font-size:1.6vw; max-height:2vw;
+    cursor:pointer; text-align:center; transition:0.7s; margin-top:5vw;}
+.menu_box_li:hover{max-height:35vh;}
+.menu_sub_box{font-size:1.2vw;}
+.menu_sub_box_li{padding-top:1vw; z-index:2;}
+.menu_sub_box_li:hover{color:white;}
+.section5_text_box{font-family: "Yeon Sung", system-ui; font-weight:700; font-size:10vw;
+    position:absolute; top:50%; animation-name:opacity_text; animation-iteration-count:infinite;
+    animation-duration:3s; color:rgb(247, 234, 234);
+}
+@-webkit-keyframes opacity_text{0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}}
+.section6{display:flex; align-items:center;}
+.section6>.link_list{display:flex; justify-content:space-evenly; align-items:center; width:100%; height:100%;}
+.link_list>a{transition:1s;}
+.link_list>a>.link_list_li{display:flex; flex-direction:column; justify-content:center; align-items:center; transition:1s;
+    width:10vw; height:25vh; font-family: "Yeon Sung", system-ui; font-size:3vw; font-weight:700;}
+.link_list>a>.link_list_li:hover{width:15vw; height:30vh; font-size:4vw;}
+.link_list>a>.link_list_li>img{padding-bottom:3vh;}

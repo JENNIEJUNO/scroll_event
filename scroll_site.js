@@ -290,10 +290,9 @@ for(let i = 0; i < menu_sub_box_li.length; i++){
         else if(i == 14) section5_sub_box.style.borderRadius = '10%';
         else if(i == 15) section5_sub_box.style.borderRadius = '0%';
         //menu_sub_box_li 4
-        if(i == 16) section5_sub_box.style.backgroundColor = 'red';
-        else if(i == 17) section5_sub_box.style.backgroundColor = 'orange';
-        else if(i == 18) section5_sub_box.style.backgroundColor = 'yellow';
-        else if(i == 19) section5_sub_box.style.backgroundColor = 'green';
-        else if(i == 20) section5_sub_box.style.backgroundColor = 'null';
+        if(i == 16) section5_sub_box.style.transition = '3s';
+        else if(i == 17) section5_sub_box.style.transition = '2s';
+        else if(i == 18) section5_sub_box.style.transition = '1s';
+        else if(i == 19) section5_sub_box.style.transition = '0s';
     })
 }
